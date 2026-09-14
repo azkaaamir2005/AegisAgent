@@ -39,6 +39,7 @@ AegisAgent continuously analyzes system metrics and incoming log data, evaluates
                |    - Docker runtime             |
                |    - Secure AWS Boto3 SDK       |
                +---------------------------------+
+```
 
 ## 🛠️ Tech Stack
 * **Language:** Python
