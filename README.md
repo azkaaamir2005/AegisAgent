@@ -6,7 +6,7 @@ An autonomous infrastructure monitoring and telemetry specialist agent built for
 AegisAgent continuously analyzes system metrics and incoming log data, evaluates threat severity using advanced LLM reasoning, and dispatches critical alerts directly to cloud notification pipelines. It is containerized and optimized for deployment via AWS AgentCore.
 
 ## Architecture
-'''text
+```text
       +-------------------------------------------------------+
        |                  Incoming Telemetry &                 |
        |                System Logs / Metrics                  |
