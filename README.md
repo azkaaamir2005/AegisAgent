@@ -37,7 +37,7 @@ While core configuration logs and initial documentation refer to baseline implem
             |  Detect Anomalies)                          |
             v                                             v
 +-----------------------+                     +-----------------------+
-|  Google Gemini 2.5    |                     |    AWS SNS (Topic)    |
+|  Google Gemini 2.5/3.6|                     |    AWS SNS (Topic)    |
 |       Flash LLM       |                     | - Automated dispatch  |
 | (Reasoning & Parsing) |                     | - Notification push   |
 +-----------------------+                     +-----------------------+
@@ -56,7 +56,7 @@ While core configuration logs and initial documentation refer to baseline implem
 ## 🛠️ Tech Stack
 * **Language:** Python
 * **Agent Framework:** Strands (`Agent`, `@tool`)
-* **Core Intelligence:** Google Gemini 2.5 Flash
+* **Core Intelligence Engine:** Google Gemini Flash Tier (Compatible with 2.5 Flash & Next-Gen 3.6 Flash Runtime)
 * **Cloud & Infrastructure:** AWS (`boto3`, SNS), Docker, AWS AgentCore
 
 ## 📋 Hackathon Compliance & Disclosures
