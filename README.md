@@ -5,6 +5,18 @@ An autonomous infrastructure monitoring and telemetry specialist agent built for
 ## 🚀 Overview
 AegisAgent continuously analyzes system metrics and incoming log data, evaluates threat severity using advanced LLM reasoning, and dispatches critical alerts directly to cloud notification pipelines. It is containerized and optimized for deployment via AWS AgentCore.
 
+## 🤖 Model Agnostic Design & Architecture Decoupling
+
+A core engineering priority for **Aegis Agent** was decoupling the LLM generation tier from the underlying orchestration and governance layer. 
+
+While core configuration logs and initial documentation refer to baseline implementations using **Google Gemini 2.5 Flash**, the system is designed to be completely model-agnostic. The deployment infrastructure on **AWS AgentCore** successfully abstracts the runtime, allowing the **Strands Agents SDK** to execute security guardrails natively across upgraded upstream endpoints—including live validation testing on next-generation architectures like **Gemini 3.6 Flash**. 
+
+### Key Architectural Benefits:
+* **Forward Compatibility:** Upgrading the underlying LLM requires zero modifications to the core Aegis governance logic.
+* **Infrastructure Stability:** Model latency or version shifts do not impact the stateful agent loops managed by AWS AgentCore.
+* **Deterministic Guardrails:** The security gating mechanisms intercept payloads identically, regardless of the token-generation engine version.
+
+
 ## Architecture
 
 ```text
